@@ -75,3 +75,33 @@ button:hover{
     color:#666;
     font-style:italic;
 }
+.container{
+    animation: fadeUp 0.8s ease-out;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.message{
+    animation: fadeUp 1.1s ease-out;
+}
+
+.goal{
+    animation: fadeUp 1.4s ease-out;
+}
+
+button{
+    box-shadow:0 8px 20px rgba(25,118,210,0.3);
+}
+
+button:active{
+    transform:scale(0.98);
+}
