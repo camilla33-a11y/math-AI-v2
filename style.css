@@ -1,1 +1,77 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"Malgun Gothic", sans-serif;
+    background:linear-gradient(135deg,#e8f5e9,#e3f2fd);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
+.container{
+    width:90%;
+    max-width:700px;
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+h1{
+    color:#1565c0;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#555;
+    font-weight:normal;
+    margin-bottom:35px;
+}
+
+.message,
+.goal{
+    background:#f7fbff;
+    border-left:8px solid #4caf50;
+    border-radius:15px;
+    padding:20px;
+    margin:25px 0;
+    text-align:left;
+}
+
+.message h3,
+.goal h3{
+    margin-top:0;
+    color:#2e7d32;
+}
+
+.message p,
+.goal p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+button{
+    margin-top:25px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    padding:18px 45px;
+    font-size:22px;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0d47a1;
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:35px;
+    color:#666;
+    font-style:italic;
+}
