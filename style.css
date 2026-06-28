@@ -195,6 +195,47 @@ button:active{
         width:100%;
         font-size:20px;
     }
+    .choice-button{
+    display:block;
+    width:100%;
+    margin:12px 0;
+    padding:16px;
+    background:white;
+    color:#222;
+    border:2px solid #dbeafe;
+    border-radius:14px;
+    font-size:18px;
+    text-align:left;
+    box-shadow:none;
+}
+
+.choice-button:hover{
+    background:#e3f2fd;
+    transform:none;
+}
+
+.choice-button.correct{
+    background:#e8f5e9;
+    border-color:#4caf50;
+    color:#1b5e20;
+    font-weight:bold;
+}
+
+.choice-button.wrong{
+    background:#ffebee;
+    border-color:#e53935;
+    color:#b71c1c;
+    font-weight:bold;
+}
+
+.choice-button:disabled{
+    cursor:default;
+    opacity:1;
+}
+
+#nextBtn{
+    margin-top:18px;
+}
 
     .unit-grid{
         grid-template-columns:1fr;
