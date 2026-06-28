@@ -10,50 +10,96 @@
 <body>
     <main class="container">
 
-        <header class="app-header">
-            <div class="logo">📚</div>
-            <h1>Math AI v2</h1>
-            <h2>생각하는 힘을 키우는 수학 플랫폼</h2>
-        </header>
+        <section id="welcomeScreen">
+            <header class="app-header">
+                <div class="logo">📚</div>
+                <h1>Math AI v2</h1>
+                <h2>생각하는 힘을 키우는 수학 플랫폼</h2>
+            </header>
 
-        <section class="welcome-card">
-            <h3>😊 환영합니다!</h3>
-            <p>오늘도 작은 한 걸음이 내일의 큰 성장이 됩니다.</p>
-        </section>
+            <section class="welcome-card">
+                <h3>😊 환영합니다!</h3>
+                <p>오늘도 작은 한 걸음이 내일의 큰 성장이 됩니다.</p>
+            </section>
 
-        <section class="student-form">
-            <h3>👤 학생 정보</h3>
+            <section class="student-form">
+                <h3>👤 학생 정보</h3>
 
-            <label for="studentName">이름</label>
-            <input type="text" id="studentName" placeholder="이름을 입력하세요">
+                <label for="studentName">이름</label>
+                <input type="text" id="studentName" placeholder="이름을 입력하세요">
 
-            <label>학년</label>
-            <div class="grade-group">
-                <label><input type="radio" name="grade" value="1"> 1학년</label>
-                <label><input type="radio" name="grade" value="2"> 2학년</label>
-                <label><input type="radio" name="grade" value="3"> 3학년</label>
-            </div>
+                <label>학년</label>
+                <div class="grade-group">
+                    <label><input type="radio" name="grade" value="1"> 1학년</label>
+                    <label><input type="radio" name="grade" value="2"> 2학년</label>
+                    <label><input type="radio" name="grade" value="3"> 3학년</label>
+                </div>
 
-            <label for="studentClass">반</label>
-            <input type="number" id="studentClass" placeholder="예: 1">
+                <label for="studentClass">반</label>
+                <input type="number" id="studentClass" placeholder="예: 1">
 
-            <label for="studentNumber">번호</label>
-            <input type="number" id="studentNumber" placeholder="예: 15">
-        </section>
+                <label for="studentNumber">번호</label>
+                <input type="number" id="studentNumber" placeholder="예: 15">
+            </section>
 
-        <section class="message">
-            <h3>🌱 오늘의 응원</h3>
-            <p>
-                틀린 문제는 실패가 아닙니다.<br>
-                새로운 것을 배우기 시작했다는 증거입니다.
+            <section class="message">
+                <h3>🌱 오늘의 응원</h3>
+                <p>
+                    틀린 문제는 실패가 아닙니다.<br>
+                    새로운 것을 배우기 시작했다는 증거입니다.
+                </p>
+            </section>
+
+            <button id="startBtn">학습 시작하기</button>
+
+            <p class="footer">
+                정답보다 성장을 응원합니다.
             </p>
         </section>
 
-        <button id="startBtn">학습 시작하기</button>
+        <section id="unitScreen" class="hidden">
+            <header class="app-header">
+                <div class="logo">🎯</div>
+                <h1>오늘의 학습</h1>
+                <h2 id="studentGreeting">오늘은 어떤 단원을 공부할까요?</h2>
+            </header>
 
-        <p class="footer">
-            정답보다 성장을 응원합니다.
-        </p>
+            <section class="unit-grid">
+                <button class="unit-card" data-unit="소인수분해">
+                    <span>📗</span>
+                    <strong>소인수분해</strong>
+                    <small>약수와 배수, 소수와 합성수</small>
+                </button>
+
+                <button class="unit-card" data-unit="정수와 유리수">
+                    <span>📘</span>
+                    <strong>정수와 유리수</strong>
+                    <small>양수·음수, 사칙계산</small>
+                </button>
+
+                <button class="unit-card" data-unit="문자와 식">
+                    <span>📙</span>
+                    <strong>문자와 식</strong>
+                    <small>문자의 사용, 식의 계산</small>
+                </button>
+
+                <button class="unit-card" data-unit="일차방정식">
+                    <span>📕</span>
+                    <strong>일차방정식</strong>
+                    <small>등식의 성질과 방정식 풀이</small>
+                </button>
+
+                <button class="unit-card" data-unit="좌표평면과 그래프">
+                    <span>📓</span>
+                    <strong>좌표평면과 그래프</strong>
+                    <small>순서쌍, 좌표, 그래프</small>
+                </button>
+            </section>
+
+            <p class="footer">
+                한 단원을 선택하면 퀴즈 엔진으로 연결됩니다.
+            </p>
+        </section>
 
     </main>
 
